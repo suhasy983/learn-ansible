@@ -1,9 +1,9 @@
-- host: all
+- hosts: all
   tasks:
     - ping:
 
 - name: sample playbook
-  host: all
+  hosts: all
   tasks:
     - name: print hello
       ansible.builtin.debug:
