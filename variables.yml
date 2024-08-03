@@ -1,4 +1,4 @@
-- name : Demo variable
+- name: Demo variable
   hosts: all
   var:
     URL: google.com
