@@ -1,0 +1,15 @@
+- name: Demo on template
+  hosts: localhost
+  tasks:
+    - name: copy file
+      ansible.builtin.copy:
+        src: hello.txt
+        dest: /tmp/h1.txt
+
+    - name: Template file copy to get variable in effect
+      ansible.builtin.template:
+        src: hello.txt
+        dest: /tmp/h2.txt
+
+
+
